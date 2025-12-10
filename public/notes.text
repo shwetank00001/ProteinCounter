@@ -1,0 +1,10 @@
+Routing, Rendering and caching are the features of NextJs. We need to implement this .
+
+There are 2 routers in NextJs
+Page Router and App router 
+
+Focus on app router? why?
+because app router has 
+1. Serverless components
+2. Client base components
+3. PArtial Re rendering
