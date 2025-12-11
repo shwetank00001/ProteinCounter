@@ -8,3 +8,5 @@ because app router has
 1. Serverless components
 2. Client base components
 3. PArtial Re rendering
+
+// every folder in app router becomes a route
