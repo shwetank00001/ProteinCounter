@@ -10,3 +10,19 @@ because app router has
 3. PArtial Re rendering
 
 // every folder in app router becomes a route
+
+
+
+By default it is, Server components, dont re render. They arent included in Browser bundle
+- they are not included in the Browswer bundles, which mean you can keep api keys in the Server components.
+-They have RSC stream - React serve component stream - which is like json but this is how react identifies which is server or which is a client component
+
+ IMP-
+ CAN NOT PASS A FUNCTION AS A PROP IN SERVER COMPONENT
+ CAN NOT USE BROWSER APIS WHEN USING SERVER COMPONENT - since they are on sv and have no access to browser. hence no APIS
+
+ for client components
+ "use client"
+ - can re render - modals, forms, etc
+ in browser bundle
+ All the hooks need useCLient 
