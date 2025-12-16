@@ -26,3 +26,23 @@ By default it is, Server components, dont re render. They arent included in Brow
  - can re render - modals, forms, etc
  in browser bundle
  All the hooks need useCLient 
+
+
+ // Cache components & partial pre rendering
+
+ to cache our components we can set 
+
+ import type  {NextConfig} from "next
+ const nextConfig : NextConfig = {
+    cacheComponents: true,
+ } ;
+
+ export default nextConfig
+
+ we can also do "use cache"
+
+== partial pre rendering ==
+As soon as we enable cacheComponents, partialprerendering is enabled by default  
+eg- we can keep the static content directly and for the dynamic content, we can make it a little dynamic
+
+Inshort to cache a component - We can "use cache" and for partial rendering a particular component -> We can suspense it 
