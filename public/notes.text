@@ -45,4 +45,17 @@ By default it is, Server components, dont re render. They arent included in Brow
 As soon as we enable cacheComponents, partialprerendering is enabled by default  
 eg- we can keep the static content directly and for the dynamic content, we can make it a little dynamic
 
-Inshort to cache a component - We can "use cache" and for partial rendering a particular component -> We can suspense it 
+Inshort to cache a component - We can "use cache" and for partial rendering a particular component
+And for a dynamic component, we wrap it in Suspense
+
+
+
+NEXT JS MENTAL MODEL
+
+TO GET DATA FROM A SERVER/API -> 
+We use serve components to fetch data and SERVER ACTIONS to mutate the SV data.
+
+IMP 
+we dont create routes in nextjs, instead we do
+"use server" and we mark that function as HTTP endpoint.
+
