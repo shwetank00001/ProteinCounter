@@ -59,3 +59,11 @@ IMP
 we dont create routes in nextjs, instead we do
 "use server" and we mark that function as HTTP endpoint.
 
+
+"use server"
+
+function getData(){
+   fetch(sflmsf)
+}
+
+
